@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    box-sizing: border-box;
 }
 
 button{
@@ -11,27 +12,34 @@ button{
     background-color: white;
     border: 3px solid black;
     text-transform: uppercase;
+    
+}
+
+:root{
+    --textSize: 100px;
 }
 
 h1{
+    padding: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 1s;
-    font-size: 50px;
+    font-size: var(--textSize);
+    border: 0 solid black;
 }
 
 button.larger:hover ~ h1{
-    font-size: 100px;
+    font-size: calc(var(--textSize)*2);
 }
 
 button.smaller:hover ~ h1{
-    font-size: 25px;
+    font-size: calc(var(--textSize)/2);
 }
 
 button.border:hover ~ h1{
-    padding: 15px;
+    
     display: inline;
     border: 5px solid black;
 }
