@@ -30,16 +30,28 @@ h1{
     border: 0 solid black;
 }
 
-button.larger:hover ~ h1{
+/* button.larger:hover ~ h1{
+    font-size: calc(var(--textSize)*2);
+} */
+
+.big{
     font-size: calc(var(--textSize)*2);
 }
 
-button.smaller:hover ~ h1{
+/* button.smaller:hover ~ h1{
+    font-size: calc(var(--textSize)/2);
+} */
+
+.small{
     font-size: calc(var(--textSize)/2);
 }
 
-button.border:hover ~ h1{
-    
+.borderNew{
     display: inline;
     border: 5px solid black;
 }
+
+/* button.border:hover ~ h1{
+    display: inline;
+    border: 5px solid black;
+} */
